@@ -78,18 +78,24 @@
 //
 //console.log("The type is: " + typeof(null));
 
-var x = 300;
-var y = 100;
+// var x = 300;
+// var y = 100;
+//
+// function scopeExample() {
+//     var x = 1;
+//     var y = 2;
+//     console.log('x: ' + x + ' y: ' + y); // x: 1 y: 2
+//     return x + y;
+// }
+//
+// console.log('x: ' + x + ' y: ' + y); // x: 300 y: 100
+// var returnValue = scopeExample();
+// console.log(returnValue); // 3
 
-function scopeExample() {
-    var x = 1;
-    var y = 2;
-    console.log('x: ' + x + ' y: ' + y); // x: 1 y: 2
-    return x + y;
-}
-
-console.log('x: ' + x + ' y: ' + y); // x: 300 y: 100
-var returnValue = scopeExample();
-console.log(returnValue); // 3
+// function addTwoNumbers(num1, num2) {
+//     let num = num1 + num2;
+//     return num;
+// }
+// console.log(addTwoNumbers(4,9));
 
 
