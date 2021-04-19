@@ -18,11 +18,11 @@
 //
 // console.log("The results of add() is: " + add(mynum, mynum2, mynum2));
 //
-// function subtract(num1, num2){
-//     return num1 - num2;
-// }
-//
-// console.log("The results of subtract() is: " + subtract(33, 12));
+function subtract(num1, num2){
+    return num1 - num2;
+ }
+
+ console.log("The results of subtract() is: " + subtract(33, 12));
 
 // MINI EXERCISE
 // TODO: Create functions which will return the product (*) of two numbers and the dividend (/) of numbers, respectively.
