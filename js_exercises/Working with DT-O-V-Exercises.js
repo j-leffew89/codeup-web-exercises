@@ -31,32 +31,31 @@
 //
 // ==== "2.70"
 // --------------------------------------------------------
+ console.log(isNaN (0))// false
+
+console.log(isNaN(1)) // false
+
+console.log(isNaN("")) // false
+
+console.log(isNaN("string")) // true
+
+console.log(isNaN("0")) // false
+
+console.log(isNaN("1"))// false
+
+console.log(isNaN(".145")) //false
+
+console.log(isNaN(Number.MAX_VALUE)) // false
+
+console.log(isNaN(Infinity)) // false
+
+console.log(isNaN("true")) // true
+
+console.log(isNaN(true)) // false
+
+console.log(isNaN("false"))//true
 //
-// console.log(isNaN = 0)); === false
-//
-// isNaN(1) === false
-//
-// isNaN("") === false
-//
-// isNaN("string") === true
-//
-// isNaN("0") === false
-//
-// isNaN("1") === false
-//
-// isNaN("3.145") === false
-//
-// isNaN(Number.MAX_VALUE) === false
-//
-// isNaN(Infinity) === false
-//
-// isNaN("true") === true
-//
-// isNaN(true) === false
-//
-// isNaN("false") === true
-//
-// isNaN(false) false
+console.log(isNaN(false)) // false
 //
 // // to illustrate why the isNaN() function is needed:
 //
@@ -69,21 +68,21 @@ console.log(!false) // true
 console.log(!!true) // true
 
 console.log(!!false) // false
-//
-// !!0 == false
-//
-// !!-0 == false
-//
-// !!1 == true
-//
-// !!-1 == false
-//
-// !!0.1 == true
-//
-// !!"hello" == true
-//
-// !!"" false
-//
+
+console.log(!!0) //false
+
+console.log(!!-0) //false
+
+console.log(!!1) // true
+
+console.log(!!-1) // false
+
+console.log(!!0.1) // true
+
+console.log(!!"hello") // true
+
+console.log(!!"") // false
+
 console.log (!!'') // false
 
 console.log (!!"false") // true
