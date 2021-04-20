@@ -1,109 +1,109 @@
- (
-    function(){
-        "use strict";
-
-        /**
-         * TODO:
-         * Create a function called 'sayHello' that takes a parameter 'name'.
-         * When called, the function should return a message that says hello to the passed in name.
-         *
-         * Example
-         * > sayHello("codeup") // returns "Hello, codeup!"
-         */
-
-         function sayHello (name) {
-             return "Hello, " + name;
-          }
-          sayHello(" CodeUp!");
-
-
-
-
-        /**
-         * TODO:
-         * Call the function 'sayHello' and pass your name as a string literal argument.
-         * Store the result of the function call in a variable named 'helloMessage'.
-         *
-         * console.log 'helloMessage' to check your work
-         */
-
-        var helloMessage = sayHello("CodeUp!");
-
-        console.log(helloMessage);
-
-        /**
-         * TODO:
-         * Store your name as a string in a variable named 'myName', and pass that
-         * variable to the 'sayHello' function. You should see the same output in the
-         * console.
-         */
-
-          var myName = 'Codeup!';
-          console.log(sayHello(myName));
-
-// Don't modify the following line, it generates a random number between 1 and 3
-// and stores it in a variable named random
-var random = Math.floor((Math.random() * 3) + 1);
-
-        /**
-         * TODO:
-         * Create a function called 'isTwo' that takes a number as a parameter.
-         * The function should return a boolean value based on whether or not the passed
-         * number is the number 2.
-         *
-         * Example
-         * > isTwo(1) // returns false
-         * > isTwo(2) // returns true
-         * > isTwo(3) // returns false
-         *
-         * Call the function 'isTwo' passing the variable 'random' as a argument.
-         *
-         * console.log *outside of the function* to check your work (you should see a
-         * different result everytime you refresh the page if you are using the random
-         * number)
-         */
-
-          function istwo(num){
-            console.log("random number is: " + num)
-             if(num === 2){
-                 return true;
-             } else{
-                 return false;
-             }
-          }
-
-          console.log(istwo(random));
-
-        /**
-         * TODO:
-         * Create a function named 'calculateTip' to calculate a tip on a bill at a
-         * restaurant. The function should accept a tip percentage and the total of the
-         * bill, and return the amount to tip
-         *
-         * Examples:
-         * > calculateTip(0.20, 20) // returns 4
-         * > calculateTip(0.25, 25.50) // returns 6.375
-         * > calculateTip(0.15, 33.42) // returns 5.013
-         */
-        function calculateTip (myTip, billAmount) {
-            return myTip * billAmount;
-        }
-            console.log(calculateTip(.20, 44));
-            console.log(calculateTip(.15, 44));
-             console.log(calculateTip(.10, 44));
-
-
-        /**
-         * TODO:
-         * Use prompt and alert in combination with your calculateTip function to
-         * prompt the user for the bill total and a percentage they would like to tip,
-         * then display the dollar amount they should tip
-         */
-            alert("Your bill is $44");
-            prompt("What percentage would you like to give? .20 = $8.80, .15 = $6.60, .10 = $4.40")
-            alert("Fantastic your total bill will be")
-
-
+//  (
+//     function(){
+//         "use strict";
+//
+//         /**
+//          * TODO:
+//          * Create a function called 'sayHello' that takes a parameter 'name'.
+//          * When called, the function should return a message that says hello to the passed in name.
+//          *
+//          * Example
+//          * > sayHello("codeup") // returns "Hello, codeup!"
+//          */
+//
+//          function sayHello (name) {
+//              return "Hello, " + name;
+//           }
+//           sayHello(" CodeUp!");
+//
+//
+//
+//
+//         /**
+//          * TODO:
+//          * Call the function 'sayHello' and pass your name as a string literal argument.
+//          * Store the result of the function call in a variable named 'helloMessage'.
+//          *
+//          * console.log 'helloMessage' to check your work
+//          */
+//
+//         var helloMessage = sayHello("CodeUp!");
+//
+//         console.log(helloMessage);
+//
+//         /**
+//          * TODO:
+//          * Store your name as a string in a variable named 'myName', and pass that
+//          * variable to the 'sayHello' function. You should see the same output in the
+//          * console.
+//          */
+//
+//           var myName = 'Codeup!';
+//           console.log(sayHello(myName));
+//
+// // Don't modify the following line, it generates a random number between 1 and 3
+// // and stores it in a variable named random
+// var random = Math.floor((Math.random() * 3) + 1);
+//
+//         /**
+//          * TODO:
+//          * Create a function called 'isTwo' that takes a number as a parameter.
+//          * The function should return a boolean value based on whether or not the passed
+//          * number is the number 2.
+//          *
+//          * Example
+//          * > isTwo(1) // returns false
+//          * > isTwo(2) // returns true
+//          * > isTwo(3) // returns false
+//          *
+//          * Call the function 'isTwo' passing the variable 'random' as a argument.
+//          *
+//          * console.log *outside of the function* to check your work (you should see a
+//          * different result everytime you refresh the page if you are using the random
+//          * number)
+//          */
+//
+//           function istwo(num){
+//             console.log("random number is: " + num)
+//              if(num === 2){
+//                  return true;
+//              } else{
+//                  return false;
+//              }
+//           }
+//
+//           console.log(istwo(random));
+//
+//         /**
+//          * TODO:
+//          * Create a function named 'calculateTip' to calculate a tip on a bill at a
+//          * restaurant. The function should accept a tip percentage and the total of the
+//          * bill, and return the amount to tip
+//          *
+//          * Examples:
+//          * > calculateTip(0.20, 20) // returns 4
+//          * > calculateTip(0.25, 25.50) // returns 6.375
+//          * > calculateTip(0.15, 33.42) // returns 5.013
+//          */
+//         function calculateTip (myTip, billAmount) {
+//             return myTip * billAmount;
+//         }
+//             console.log(calculateTip(0.20, 44).toFixed(2));
+//             console.log(calculateTip(0.15, 44).toFixed(2));
+//              console.log(calculateTip(0.10, 44).toFixed(2));
+//
+//
+//         /**
+//          * TODO:
+//          * Use prompt and alert in combination with your calculateTip function to
+//          * prompt the user for the bill total and a percentage they would like to tip,
+//          * then display the dollar amount they should tip
+//          */
+//             var myTip = prompt("Your bill is $44");
+//             var billAmount = prompt("What percentage would you like to give? .20 = $8.80, .15 = $6.60, .10 = $4.40")
+//             alert("Fantastic your total bill will be")
+//
+//         console.log(calculateTip(myTip , billAmount));
         /**
          * TODO:
          * Create a function named `applyDiscount`. This function should accept a price
@@ -113,21 +113,24 @@ var random = Math.floor((Math.random() * 3) + 1);
          *
          * Example:
          * > var originalPrice = 100;
-         * > var dicountPercent = .2; // 20%
-         * > applyDiscount(originalPrice, dicountPercent) // 80
+         * > var discountPercent = .2; // 20%
+         * > applyDiscount(originalPrice, discountPercent) // 80
          *
          * > applyDiscount(45.99, 0.12) // 40.4712
          */
 
-        function applyDiscount (trueTotal, discountPercent){
-            return trueTotal * discountPercent;
+        function applyDiscount (originalPrice, discountPercent){
+            return (originalPrice - discountPercent).toFixed(2);
         }
-        var originalPrice = 44;
-        var discountPercent = .1; // 10%
-        console.log(applyDiscount(44, .1));
+        var originalPrice = 100;
+        var discountPercent = .2; // 10%
+
+        console.log(applyDiscount(100, .2));
 
 
 
-   }
-   )()
+
+
+
+
 
