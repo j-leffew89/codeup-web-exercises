@@ -5,40 +5,40 @@
 console.log('1' + 2) //12
 
 
-console.log(typeof '1' + 2);
+console.log(typeof '1' + 2); // string
 
 
-6 % 4 = 2
+console.log(6 % 4) // 2
 
-'3 + 4 is ' + 3 + 4  --- 13+ 14 + 3 + 4 ----34
-how could you make this produce the correct output?
+console.log('3 + 4 is ' + 3 + 4) // 3 + 4 is 34
+//how could you make this produce the correct output?
 
-0 < 0 = false
-
-
-'false' == false -- false
+console.log(0 < 0) // false
 
 
-true == 'true' -- false
+console.log('false' == false) // false
 
-5 >= -5 -- true
 
-!false || false --- true
+console.log(true == 'true') // false
 
-true || "42" --- true
+console.log(5 >= -5) // true
 
-!true && !false --- false
+console.log(!false || false) // true
 
-6 % 5 --- 1
+console.log(true || "42") // true
 
-5 < 4 && 1 === 1 --- false
+console.log(!true && !false) // false
 
-typeof 'codeup' === 'string' ---- true
+console.log(6 % 5) // 1
 
-'codeup' === 'codeup' && 'codeup' === 'Codeup' ---- true
+console.log(5 < 4 && 1 === 1) // false
 
-4 >= 0 && 1 !== '1' --- true
+console.log(typeof 'codeup') // 'string'
 
-6 % 3 === 0 --- true
+console.log('codeup' === 'codeup' && 'codeup' === 'Codeup') // true
 
-5 % 2 !== 0 ---true
+console.log(4 >= 0 && 1 !== '1') // true
+
+console.log(6 % 3 === 0) // true
+
+console.log(5 % 2 !== 0) // true
