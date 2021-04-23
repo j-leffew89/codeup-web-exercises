@@ -28,21 +28,11 @@
 
 
 
-// var spaceAvailable = 30;
-// do {
-//     var spaceAvailable = spaceAvailable -1;
-//     console.log(`we have ${spaceAvailable} amount of space left`);
-//
-// }while (spaceAvailable <= 0,)
-//     spaceAvailable -= 2;
-//
-//     console.log("No more space available");
-
-var cars = 0
-do{
-    var spaceAvailable =  30 - cars;
+let spaceAvailable = 30;
+do {
+    spaceAvailable -= 2;
     console.log(`we have ${spaceAvailable} amount of space left`);
-    cars--
-} while (spaceAvailable <= 30)
 
-console.log("sorry, we have no more space available!");
+}while (spaceAvailable >= 2)
+
+    console.log("No more space available");

@@ -11,10 +11,12 @@
 //          * > sayHello("codeup") // returns "Hello, codeup!"
 //          */
 //
-//          function sayHello (name) {
-//              return "Hello, " + name;
-//           }
-//           sayHello(" CodeUp!");
+         function sayHello (name) {
+                 console.log("Hello," + name);
+          return "Hello, " + name;
+           }
+
+           sayHello(" CodeUp!");
 //
 //
 //
@@ -27,9 +29,9 @@
 //          * console.log 'helloMessage' to check your work
 //          */
 //
-//         var helloMessage = sayHello("CodeUp!");
-//
-//         console.log(helloMessage);
+         var helloMessage = sayHello("CodeUp!");
+
+
 //
 //         /**
 //          * TODO:
@@ -38,8 +40,8 @@
 //          * console.
 //          */
 //
-//           var myName = 'Codeup!';
-//           console.log(sayHello(myName));
+           var myName = 'Jesse!';
+          console.log(sayHello(myName));
 //
 // // Don't modify the following line, it generates a random number between 1 and 3
 // // and stores it in a variable named random
@@ -63,17 +65,17 @@
 //          * number)
 //          */
 //
-//           function istwo(num){
-//             console.log("random number is: " + num)
-//              if(num === 2){
-//                  return true;
-//              } else{
-//                  return false;
-//              }
-//           }
-//
-//           console.log(istwo(random));
-//
+          function istwo(num){
+            console.log("random number is: " + num)
+             if(num === 2){
+                  return true;
+             } else{
+                 return false;
+              }
+           }
+
+           console.log(istwo(num));
+
 //         /**
 //          * TODO:
 //          * Create a function named 'calculateTip' to calculate a tip on a bill at a
@@ -118,15 +120,6 @@
          *
          * > applyDiscount(45.99, 0.12) // 40.4712
          */
-
-        function applyDiscount (originalPrice, discountPercent){
-            return (originalPrice - discountPercent).toFixed(2);
-        }
-        var originalPrice = 100;
-        var discountPercent = .2; // 10%
-
-        console.log(applyDiscount(100, .2));
-
 
 
 
