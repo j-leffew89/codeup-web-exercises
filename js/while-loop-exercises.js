@@ -28,11 +28,21 @@
 
 
 
-let spaceAvailable = 30;
-do {
-    spaceAvailable -= 2;
-    console.log(`we have ${spaceAvailable} amount of space left`);
+// let spaceAvailable = 30;
+// do {
+//     spaceAvailable -= 2;
+//     console.log(`we have ${spaceAvailable} amount of space left`);
+//
+// }while (spaceAvailable >= 2)
+//
+//     console.log("No more space available");
 
-}while (spaceAvailable >= 2)
+// TODO: Loop through a set of numbers (0-30), if the number you're currently at is even, add 2 to it. If it's an
+//  odd number, print "odd"
+// // HINT: remember the remainder operator (modulo)
 
-    console.log("No more space available");
+for(let i = 0; i <=30; i++){
+    if(i % 2){
+
+    }
+}
