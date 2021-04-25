@@ -20,19 +20,14 @@ for(let i = 0; i < 10; i++) {
 
 console.log(`----------------------------------------`)
 
-// let i = ''
-// for(let i = 1; i <=9; i++){
-//     console.log(i = .repeat);
-// }
 
-for(let i = 1; i <= 9; i++) {
-    var arr = []
-    for (let x = 1; x <= i; x++) {
-        arr.push(i);
+for(let i = 1; i <=9; i++){
+    let output = ''
+    for(let j = 1; j <=i; j++) {
+        output += i
     }
-    console.log(arr.join(""));
+    console.log(output);
 }
-
 
 
 console.log(`-------------------------------------------`)
