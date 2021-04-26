@@ -14,15 +14,6 @@
 
  console.log(planetsArray);
 
-//     var namesString = "Joe,Bob,Sally";
-//
-//     console.log(namesString);
-// // Joe,Bob,Sally
-//
-//     var namesArray = namesString.split(',');
-//
-//     console.log(namesArray);
-
 
 
 })();
