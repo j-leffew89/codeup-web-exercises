@@ -7,7 +7,7 @@
      * 'names'.
      */
 
-    const name = ['Emma', 'Ian', 'Olivia', 'Crystal'];
+    const name = ['Emma', 'Ian', 'Olivia', 'Crystal', `Sammy`];
 
 
     /**
@@ -66,20 +66,18 @@
      */
     console.log(`------------------------------`);
 
-    const numbers =[1, 2, 3, 4, 5, 6];
-    console.log(numbers[0]);
-    console.log(numbers[1]);
-    console.log(numbers[4]);
+    function first(array){
+        return array [0]
+    }
+    function second (array){
+        return array [1]
+    }
 
+    function last (array){
+        return array [4]
+    }
 
-    console.log(`------------------------------`)
-
-    const sports = [`Football`, `Basketball`, `Baseball`, `Soccer`, `Boxing`];
-    console.log(sports[0]);
-
-    const colors = [`Green`, `Blue`, `Yellow`, `teal`, `Purple`, `Grey`];
-    console.log(colors[5]);
-
+    console.log(`The first name is ${first(name)}. The second name is ${second(name)}. The last name is ${last(name)}`)
 
 
 })();
