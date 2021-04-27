@@ -8,7 +8,6 @@
      * Read each console log below, and write some javascript code to perform
      * the step that it describes
      */
-
     console.log('Adding "The Sun" to the beginning of the planets array.');
     planets.unshift(`The Sun`);
     console.log(planets);
