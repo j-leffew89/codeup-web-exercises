@@ -74,7 +74,7 @@
               }
            }
 
-           console.log(istwo(num));
+           console.log(istwo(4));
 
 //         /**
 //          * TODO:
