@@ -141,17 +141,20 @@
         return a % b;
     }
 
-    console.log(modulo(422, 27));
+    console.log(modulo('jesse', 27));
 
     function areIdentical(input1, input2){
         return input1 === input2;
     }
 
-    function absoluteValue(num){
-        return Math.abs(num);
-    }
+    function absoluteValue(num) {
+        if (typeof num == 'string' && isNaN(num)) {
+            return Math.abs(num);
+        }
+            return false;
 
-    console.log(absoluteValue(-8876))
+    }
+    console.log(absoluteValue(22))
 })()
 
 
