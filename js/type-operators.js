@@ -92,10 +92,10 @@
 // var returnValue = scopeExample();
 // console.log(returnValue); // 3
 
-// function addTwoNumbers(num1, num2) {
-//     let num = num1 + num2;
-//     return num;
-// }
-// console.log(addTwoNumbers(4,9));
+function addTwoNumbers(num1, num2) {
+    let num = num1 + num2;
+    return num;
+}
+ console.log(addTwoNumbers(4,9));
 
 
