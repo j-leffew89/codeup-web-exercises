@@ -154,7 +154,7 @@
             return false;
 
     }
-    console.log(absoluteValue(22))
+    console.log(absoluteValue(null))
 })()
 
 
