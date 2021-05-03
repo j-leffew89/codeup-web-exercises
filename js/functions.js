@@ -97,9 +97,11 @@
          * then display the dollar amount they should tip
          */
 
-        function myTip(){
+        let totalOfTheBill = prompt("Waht is your total bill")
+        let totalTip = prompt("How much is your percentage")
 
-        }
+          alert(calculateTip(totalOfTheBill, totalTip));
+
 
         /**
          * TODO:
@@ -115,6 +117,11 @@
          *
          * > applyDiscount(45.99, 0.12) // 40.4712
          */
+        function applyDiscount(price, discountPercent){
+                return price - (discountPercent * price);
+        }
+
+            console.log(applyDiscount(39, .2))
 
 
     })();
