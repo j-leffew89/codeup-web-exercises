@@ -86,7 +86,7 @@
      */
 
         console.log(prompt ("What color will you pick. Blue, red or green"));
-            var colors;
+            let colors;
         {
             if (colors === 'blue') {
                 alert("Blue is the color of the sky");

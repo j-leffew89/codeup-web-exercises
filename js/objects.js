@@ -11,6 +11,17 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
+    let person = {
+        firstName: 'Jesse',
+        lastName: 'Sosa',
+
+        sayHello: function (){
+            return `Hello from Jesse Sosa!`;
+        }
+    };
+    console.log(person.firstName);
+    console.log(person.lastName);
+    console.log(person.sayHello());
 
     /**
      * TODO:
