@@ -70,6 +70,7 @@
         }
     }
 
+    console.log(`-----------------------------------------------------`)
     /** TODO:
      * Create an array of objects that represent books and store it in a
      * variable named `books`. Each object should have a title and an author
@@ -104,8 +105,7 @@
     console.log(book[4].author.lastName);
 
 
-
-
+    console.log(`-----------------------------------------------`)
 
 
     /**
@@ -133,6 +133,18 @@
      *      ...
      */
 
+    function bookInfo(obj){
+
+        for(let i = 0; i < obj.length; i++){
+
+            console.log(`Book # ${i + 1}`);
+            console.log(`Title: ${obj[i].title}`);
+            console.log(`Author: ${obj[i].author.firstName} ${obj[i].author.lastName}`);
+        }
+
+    }
+
+bookInfo(book);
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
