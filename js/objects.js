@@ -47,11 +47,28 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+    shoppers.forEach(offer);
+
+    function offer(shopper){
+
+        var discount = 0;
+        var newTotal = 0;
+
+        console.log(`${shopper.name} has a bill of $${shopper.amount}.`);
+
+        if(shopper.amount > 200) {
+            discount = shopper.amount * 0.12;
+            newTotal = shopper.amount - discount;
+
+            console.log(`After the discount ${shopper.name}'s total is ${newTotal}`);
+        }
+    }
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -65,6 +82,31 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+    var book = [
+        {title:'The Child Called IT', author:{firstName:'Dave', lastName:'Pelzer'}},
+        {title:'War and Peace', author:{firstName:'Leo', lastName: 'Tolstoy'}},
+        {title:'Song of Soloman', author:{firstName:'Toni', lastName:'Morrison'}},
+        {title:'Ulysses', author:{firstName:'James', lastName:'Joyce'}},
+        {title:'The Shadow of the Wind', author:{firstName:'Carlos', lastName:'Ruiz-Zafon'}},
+    ]
+
+    console.log(book[0].title);
+    console.log(book[0].author.firstName);
+    console.log(book[0].author.lastName);
+
+    console.log(book[2].title);
+    console.log(book[2].author.firstName);
+    console.log(book[2].author.lastName);
+
+    console.log(book[4].title);
+    console.log(book[4].author.firstName);
+    console.log(book[4].author.lastName);
+
+
+
+
+
 
     /**
      * TODO:
