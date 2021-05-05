@@ -8,7 +8,8 @@
 for (let i = 1; i < 50; i++) {
 
     if (i % 2 !== 1) {
-        //prompt (`Give me a odd number`);
+
+        // prompt (`Give me a odd number`);
         // if (i = 27);
         // alert (`Yikes! Skipping number: 27`);
 
