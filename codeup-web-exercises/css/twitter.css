@@ -27,10 +27,16 @@ a {
 }
 .top-nav {
     background: var(--light-bg);
+    width: 100%;
+}
+.nav-item{
+    padding: 1.5em;
+    width: 100%;
+    display: inline;
 }
 .nav {
     list-style-type: none;
-    padding: 0;
+    padding: 15px;
     margin: 0;
 }
 .nav-link {
@@ -43,6 +49,7 @@ a {
 }
 .profile {
     background: var(--light-bg);
+    height: 80px;
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -55,6 +62,7 @@ a {
 .btn-large {
     font-size: 1.3em;
     padding: 10px;
+
 }
 .img-circle {
     border-radius: 100%;
@@ -65,4 +73,25 @@ a {
 }
 .text-muted {
     color: var(--main-link-color);
+}
+.profile-image{
+    position: absolute;
+    top: 275px;
+}
+/*edit profile*/
+.profile-form {
+    position: absolute;
+    right: 0;
+    top: 21.25em;
+    z-index: 1000;
+}
+
+.profile-details{
+    position: relative;
+    left:1570px;
+    margin-right: .5em;
+    margin-left: .5em;
+    top:-596px;
+    width: 25%;
+
 }

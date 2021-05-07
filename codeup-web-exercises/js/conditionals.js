@@ -85,18 +85,18 @@
      * function to show it to the user.
      */
 
-        console.log(prompt ("What color will you pick. Blue, red or green"));
-            let colors;
-        {
-            if (colors === 'blue') {
-                alert("Blue is the color of the sky");
-            } else if (colors === 'red') {
-                alert("strawberry is red");
-            } else if (colors === 'cyan') {
-                alert("I dont know anything about cyan");
-            }
-        }
-         console.log(analyzeColor(colors));
+        // console.log(prompt ("What color will you pick. Blue, red or green"));
+        //     let //colors;
+        // {
+        //     if (colors === 'blue') {
+        //         alert("Blue is the color of the sky");
+        //     } else if (colors === 'red') {
+        //         alert("strawberry is red");
+        //     } else if (colors === 'cyan') {
+        //         alert("I dont know anything about cyan");
+        //     }
+        // }
+        //  console.log(analyzeColor(colors));
      /* ########################################################################## */
 
     /**
@@ -120,7 +120,7 @@
      */
         function calculateTotal(luckyNumber, originalPrice){
 
-            let originalPrice;
+           // let originalPrice;
             let results;
 
             switch (luckyNumber){
