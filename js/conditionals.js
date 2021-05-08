@@ -5,37 +5,37 @@
     /* ########################################################################## */
 
     /**
-//      * TODO:
-//      * Create a function named `analyzeColor` that accepts a string that is a color
-//      * name as input. This function should return a message that related to that
-//      * color. Only worry about the colors defined below, if the color passed is not
-//      * one of the ones defined below, return a message that says so
-//      *
-//      * Example:
-//      *  > analyzeColor('blue') // returns "blue is the color of the sky"
-//      *  > analyzeColor('red') // returns "Strawberries are red"
-//      *  > analyzeColor('cyan') // returns "I don't know anything about cyan"
-//      *
-//      * You should use an if-else-if-else block to return different messages.
-//      *
-//      * Test your function by passing various string literals to it and
-//      * console.logging the function's return value
-//      */
+     //      * TODO:
+     //      * Create a function named `analyzeColor` that accepts a string that is a color
+     //      * name as input. This function should return a message that related to that
+     //      * color. Only worry about the colors defined below, if the color passed is not
+     //      * one of the ones defined below, return a message that says so
+     //      *
+     //      * Example:
+     //      *  > analyzeColor('blue') // returns "blue is the color of the sky"
+     //      *  > analyzeColor('red') // returns "Strawberries are red"
+     //      *  > analyzeColor('cyan') // returns "I don't know anything about cyan"
+     //      *
+     //      * You should use an if-else-if-else block to return different messages.
+     //      *
+     //      * Test your function by passing various string literals to it and
+     //      * console.logging the function's return value
+     //      */
 //
-     function analyzeColor(input) {
+    function analyzeColor(input) {
         console.log(input)
 
-         if (input === 'blue') {
-             console.log("Blue is the color of the sky");
-         } else if (input === 'red') {
-             console.log("strawberry is red");
-         } else if (input === 'cyan') {
-             console.log("I dont know anything about cyan");
-         }
+        if (input === 'blue') {
+            console.log("Blue is the color of the sky");
+        } else if (input === 'red') {
+            console.log("strawberry is red");
+        } else if (input === 'cyan') {
+            console.log("I dont know anything about cyan");
+        }
 
-     }
+    }
 
-     analyzeColor('red');
+    analyzeColor('red');
 
 
 // Don't change the next two lines!
@@ -85,19 +85,19 @@
      * function to show it to the user.
      */
 
-        // console.log(prompt ("What color will you pick. Blue, red or green"));
-        //     let //colors;
-        // {
-        //     if (colors === 'blue') {
-        //         alert("Blue is the color of the sky");
-        //     } else if (colors === 'red') {
-        //         alert("strawberry is red");
-        //     } else if (colors === 'cyan') {
-        //         alert("I dont know anything about cyan");
-        //     }
-        // }
-        //  console.log(analyzeColor(colors));
-     /* ########################################################################## */
+    // console.log(prompt ("What color will you pick. Blue, red or green"));
+    //     let //colors;
+    // {
+    //     if (colors === 'blue') {
+    //         alert("Blue is the color of the sky");
+    //     } else if (colors === 'red') {
+    //         alert("strawberry is red");
+    //     } else if (colors === 'cyan') {
+    //         alert("I dont know anything about cyan");
+    //     }
+    // }
+    //  console.log(analyzeColor(colors));
+    /* ########################################################################## */
 
     /**
      * TODO:
@@ -118,35 +118,33 @@
      * Test your function by passing it various values and checking for the expected
      * return value.
      */
-        function calculateTotal(luckyNumber, originalPrice){
+    function calculateTotal(luckyNumber, originalPrice) {
 
-           // let originalPrice;
-            let results;
+        // let originalPrice = 0;
+        // let results = 0;
 
-            switch (luckyNumber){
-                case 1:
-                    console.log(.10);
-                    break;
-                case 2:
-                    console.log(.25);
-                    break;
-                case 3:
-                    console.log(.35);
-                    break;
-                case 4:
-                    console.log(.50);
-                    break;
-                case 5:
-                    console.log(1);
-                    break;
-                default:
-                    return ("nope");
-            }
-            return originalPrice - (originalPrice * luckyNumber);
+        switch (luckyNumber) {
+            case 1:
+                console.log(.10);
+                break;
+            case 2:
+                console.log(.25);
+                break;
+            case 3:
+                console.log(.35);
+                break;
+            case 4:
+                console.log(.50);
+                break;
+            case 5:
+                console.log(1);
+                break;
+            default:
+                return ("nope");
+        }
+        return originalPrice - (originalPrice * luckyNumber);
     }
-    alert("This is your total: " + calculateTotal(6, 90))
 
-        console.log(calculateTotal(6, 100))
     /**
      * TODO:
      * Uncomment the line below to generate a random number between 0 and 6.
@@ -155,7 +153,10 @@
      * price before the discount was, and what their price after the discount is.
      */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+    let luckyNumber = Math.floor(Math.random() * 6);
+        prompt("This is your total: " + calculateTotal(6, 90))
+
+        console.log(calculateTotal(6, 100))
 
     /**
      * TODO:

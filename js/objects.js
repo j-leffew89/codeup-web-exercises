@@ -47,7 +47,7 @@
      * and console.log the relevant messages for each person
      */
 
-    var shoppers = [
+    let shoppers = [
         {name: 'Cameron', amount: 180},
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
@@ -56,15 +56,11 @@
     shoppers.forEach(offer);
 
     function offer(shopper){
-
-        var discount = 0;
-        var newTotal = 0;
-
         console.log(`${shopper.name} has a bill of $${shopper.amount}.`);
 
         if(shopper.amount > 200) {
-            discount = shopper.amount * 0.12;
-            newTotal = shopper.amount - discount;
+            let discount = shopper.amount * 0.12;
+           let newTotal = shopper.amount - discount;
 
             console.log(`After the discount ${shopper.name}'s total is ${newTotal}`);
         }
@@ -84,7 +80,7 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    var book = [
+    let book = [
         {title:'The Child Called IT', author:{firstName:'Dave', lastName:'Pelzer'}},
         {title:'War and Peace', author:{firstName:'Leo', lastName: 'Tolstoy'}},
         {title:'Song of Soloman', author:{firstName:'Toni', lastName:'Morrison'}},
