@@ -8,3 +8,8 @@ body{
     background-image: url("https://thelatch.com.au/wp-content/uploads/2020/04/the-iron-throne.jpg");
     height: 400px;
 }
+
+.fancy-header h1{
+    color: purple;
+    text-decoration: underline;
+}
