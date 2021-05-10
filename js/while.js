@@ -12,19 +12,20 @@ let allCones = Math.floor(Math.random() * 50) + 50;
 function  wantedCones () {
     return Math.floor(Math.random() * 5) + 1;
 }
- fucntion sellIceCreamCones(){
-    do{
-        if(wantedCones > allCones) {
+ function sellIceCreamCones() {
+     do {
+         if (wantedCones > allCones) {
              console.log(`I'm sorry, you wanted ${wantedCones}, but we only have ${allCones}`)
-            continue;
+             continue;
 
-             console.log(`Here are ${wantedCones}. Enjoy!)
+             console.log(`Here are ${wantedCones}. Enjoy!`);
+             continue;
              allCones -= wantedCones;
 
-            lol console.log(`We have ${allCones} remaining`);
-    }
-}
+             console.log(`We have ${allCones} remaining`);
+         }
+
 
 }while(allCones > 0)
 
-console.log(`We've sold out of cones for the day!`);
+console.log("We have sold out of cones for the day!");

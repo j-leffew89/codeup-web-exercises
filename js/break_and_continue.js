@@ -13,10 +13,12 @@ for (let i = 1; i < 50; i++) {
         // if (i = 27);
         // alert (`Yikes! Skipping number: 27`);
 
-         continue;
+        continue;
 
 
     }
-
+    else if (i === 27){
+        alert( 'Yikes! Skipping number: 27');
+    }
     console.log('Here is a odd number: ' + i);
 }

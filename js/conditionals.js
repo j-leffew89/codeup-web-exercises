@@ -43,8 +43,8 @@
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-    var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-    var randomColor = colors[Math.floor(Math.random() * colors.length)];
+    let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+    let randomColor = colors[Math.floor(Math.random() * colors.length)];
     /**
      * TODO:
      * Pass the `randomColor` variable to your function and console.log the results.
@@ -85,18 +85,18 @@
      * function to show it to the user.
      */
 
-    // console.log(prompt ("What color will you pick. Blue, red or green"));
-    //     let //colors;
-    // {
-    //     if (colors === 'blue') {
-    //         alert("Blue is the color of the sky");
-    //     } else if (colors === 'red') {
-    //         alert("strawberry is red");
-    //     } else if (colors === 'cyan') {
-    //         alert("I dont know anything about cyan");
-    //     }
-    // }
-    //  console.log(analyzeColor(colors));
+    console.log(prompt ("What color will you pick. Blue, red or green"));
+        let //colors;
+    {
+        if (colors === 'blue') {
+            alert("Blue is the color of the sky");
+        }else if (colors === 'red') {
+            alert("strawberry is red");
+        } else if (colors === 'cyan') {
+            alert("I dont know anything about cyan");
+        }
+    }
+     console.log(analyzeColor(colors));
     /* ########################################################################## */
 
     /**
@@ -174,6 +174,23 @@
      * Can you refactor your code to use functions?
      * HINT: The way we prompt for a value could be improved
      */
+    let button = confirm("Do you want to enter a number");
+        if(button){
+            let typeNumber = prompt("Enter a number");
+            if(typeNumber % 2 === 0) {
+                alert("This number is even");
+            }else{
+                alert("This number is odd");
+            }
+            if (typeNumber > 0) {
+                alert("This number is positive");
+            }else{
+                alert("This number is Odd");
+            }
+            console.log(typeNumber)
+            alert("number plus 100" + (parseInt(typeNumber) + 100));
+        }
+
 
 }
 )()
