@@ -1,15 +1,24 @@
-header{
-    color: blue;
-    text-align: center;
-    text-decoration: underline;
-}
+/*header{*/
+/*    color: red;*/
+/*    text-align: center;*/
+/*    text-decoration: underline;*/
+/*}*/
 
 body{
     background-image: url("https://thelatch.com.au/wp-content/uploads/2020/04/the-iron-throne.jpg");
-    height: 400px;
+    height: 1px;
+    text-align: justify-all;
 }
 
-.fancy-header h1{
+
+ul > li{
     color: purple;
+    text-decoration: underline;
+}
+h1{
+    color: red;
+}
+.fancy-header {
+    color: blue;
     text-decoration: underline;
 }
