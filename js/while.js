@@ -26,6 +26,7 @@ function  wantedCones () {
          }
 
 
-}while(allCones > 0)
+     } while (allCones > 0)
 
-console.log("We have sold out of cones for the day!");
+     console.log("We have sold out of cones for the day!");
+ }

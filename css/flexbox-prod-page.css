@@ -1,8 +1,12 @@
-nav{
+nav > img{
     display: flex;
     align-items: center;
+    float: left;
+
 }
 
 ul > li{
-    display: flex;
+    align-items: center;
+    float: right;
+
 }
