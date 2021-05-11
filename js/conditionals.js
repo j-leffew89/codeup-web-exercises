@@ -43,7 +43,7 @@
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-    let colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+    let colors= ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
     let randomColor = colors[Math.floor(Math.random() * colors.length)];
     /**
      * TODO:
@@ -86,7 +86,7 @@
      */
 
     console.log(prompt ("What color will you pick. Blue, red or green"));
-        let //colors;
+        let colors;
     {
         if (colors === 'blue') {
             alert("Blue is the color of the sky");
@@ -96,7 +96,7 @@
             alert("I dont know anything about cyan");
         }
     }
-     console.log(analyzeColor(colors));
+     console.log(analyzeColor("colors"));
     /* ########################################################################## */
 
     /**
@@ -119,32 +119,27 @@
      * return value.
      */
     function calculateTotal(luckyNumber, originalPrice) {
-
-        // let originalPrice = 0;
-        // let results = 0;
-
-        switch (luckyNumber) {
-            case 1:
-                console.log(.10);
-                break;
-            case 2:
-                console.log(.25);
-                break;
-            case 3:
-                console.log(.35);
-                break;
-            case 4:
-                console.log(.50);
-                break;
-            case 5:
-                console.log(1);
-                break;
-            default:
-                return ("nope");
+        if (luckyNumber === 0) {
+            return originalPrice
         }
-        return originalPrice - (originalPrice * luckyNumber);
+        else if (luckyNumber === 1){
+            return originalPrice - (.10 * originalPrice);
+        }
+        else if (luckyNumber === 2){
+            return originalPrice - (.25 * originalPrice);
+        }
+        else if (luckyNumber === 3){
+            return originalPrice - (.35 * originalPrice);
+        }
+        else if (luckyNumber === 4){
+            return originalPrice - (.50 * originalPrice);
+        }
+        else {
+            return originalPrice - originalPrice;
+        }
     }
 
+        console.log(calculateTotal(2, 25.00));
     /**
      * TODO:
      * Uncomment the line below to generate a random number between 0 and 6.
@@ -158,6 +153,7 @@
 
         console.log(calculateTotal(6, 100))
 
+        console.log(luckyNumber);
     /**
      * TODO:
      * Write some JavaScript that uses a `confirm` dialog to ask the user if they
