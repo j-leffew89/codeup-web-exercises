@@ -17,10 +17,9 @@ function  wantedCones () {
          if (wantedCones > allCones) {
              console.log(`I'm sorry, you wanted ${wantedCones}, but we only have ${allCones}`)
              continue;
-
              console.log(`Here are ${wantedCones}. Enjoy!`);
              continue;
-             allCones -= wantedCones;
+            allCones -= wantedCones;
 
              console.log(`We have ${allCones} remaining`);
          }

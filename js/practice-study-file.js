@@ -264,3 +264,13 @@ function remainder(num, div){
 }
 
 console.log(remainder(44, 20))
+
+console.log("---------------------------------")
+
+for(let i = 1; i <=5; i++){
+    let output = '* '
+    for(let j = 1; j <=i; j++) {
+        output += i
+    }
+    console.log(output);
+}
