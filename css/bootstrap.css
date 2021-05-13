@@ -1,14 +1,41 @@
 .jumbotron{
     width: 90%;
     margin: auto;
-    padding :4rem 0;
+    padding: 4rem 0;
+    background-image: url("../img/pizza.png");
+
+}
+.container{
 }
 
 h1{
     text-align: center;
+}
 
+h2{
+    width: 88%;
+    margin:auto;
 }
 
 form {
     display: flex;
+}
+
+.nav{
+    width: 88%;
+    margin: auto;
+}
+
+.card{
+    width: 88%;
+    margin: auto;
+    /*background-color: blue;*/
+    /*color: white;*/
+    border: 1px solid lightgrey;
+}
+.card1{
+    /*display: flex;*/
+    width: 80%;
+    margin: auto;
+    border: 1px solid lightgrey;
 }
