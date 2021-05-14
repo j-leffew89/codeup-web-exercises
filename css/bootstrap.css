@@ -29,18 +29,34 @@ form {
 
 .card{
     width: 88%;
-    margin: auto;
-    background-color: #027bff;
+    margin:auto;
+    /*background-color: #027bff;*/
     color: white;
     border: 1px solid lightgrey;
 }
 .card1{
-    /*display: flex;*/
-    width: 80%;
     margin: auto;
+    width: 80%;
+    /*margin-bottom: 1em;*/
     border: 1px solid lightgrey;
+}
+
+li{
+    text-decoration: none;
 }
 
 .card-footer{
     text-align: right;
+}
+
+h5.card-header{
+    background: #027BFF;
+}
+
+div.card-header{
+    color: black;
+}
+
+label.from-check-label{
+    color: black;
 }
