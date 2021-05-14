@@ -3,9 +3,10 @@
     margin: auto;
     padding: 4rem 0;
     background-image: url("../img/pizza.png");
-
 }
-.container{
+
+.nav-links{
+    display: flex;
 }
 
 h1{
@@ -29,8 +30,8 @@ form {
 .card{
     width: 88%;
     margin: auto;
-    /*background-color: blue;*/
-    /*color: white;*/
+    background-color: #027bff;
+    color: white;
     border: 1px solid lightgrey;
 }
 .card1{
@@ -38,4 +39,8 @@ form {
     width: 80%;
     margin: auto;
     border: 1px solid lightgrey;
+}
+
+.card-footer{
+    text-align: right;
 }
