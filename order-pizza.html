@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title><!-- TODO: put your title here --></title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+              integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="css/order-pizza.css">
+        <!-- Your custom css styles go here -->
+    </head>
+    <body>
+        <!--        <alert>Everything is ok!</alert>-->
+        <!-- Main page content -->
+
+<!--        <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--            <a class="navbar-brand" href="#">Pizza World</a>-->
+<!--            <div class="collapse navbar-collapse" id="navbarNav">-->
+<!--                <ul class="navbar-nav mr-auto">-->
+<!--                    <li class="nav-item active">-->
+<!--                        <a class="nav-link" href="#">Order online <span class="sr-only">(current)</span></a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link" href="#">Menu</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <form class="form-inline">-->
+<!--                            <input class="form-control mr-sm-2" type="search" placeholder="Zip Code"-->
+<!--                                   aria-label="Search">-->
+<!--                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search Stores near you!-->
+<!--                            </button>-->
+<!--                        </form>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <ul class="navbar-nav">-->
+<!--                    <li><a href="#"> <i class="bi bi-person-circle"></i>Sign up</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </nav>-->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand bg-light" href="#">Pizza World</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link bg-light" href="#">Order online
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-light" href="#">Menu</a>
+                    </li>
+                    <li class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="zip code" placeholder="Zip Code"
+                               aria-label="Zip Code">
+                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"> Search Store Near You!
+                        </button>
+                    </li>
+                </ul>
+                <form>
+                    <img src="img/person-fill.svg" width="35" height="35" alt="icon">
+                    <a class="nav-link bg-light" href="#">Sign Up</a>
+                </form>
+            </div>
+        </nav>
+        <div class="jumbotron"></div>
+        <h1>Welcome To Pizza World!</h1>
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                       aria-controls="home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                       aria-controls="profile" aria-selected="false">Profile</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                       aria-controls="contact" aria-selected="false">Contact</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <!--Pizza crust and size         -->
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Page 2</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Featured
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Page 3</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class="btn btn-primary float-right">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+                crossorigin="anonymous"></script>
+        <!-- Your custom JS goes here -->
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!doctype html>-->
+<!--<html lang="">-->
+<!--    <head>-->
+<!--        <meta charset="utf-8"/>-->
+<!--        <meta http-equiv="x-ua-compatible" content="ie=edge"/>-->
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--        <title>Pizza World</title>-->
+<!--        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"-->
+<!--              integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"-->
+<!--              crossorigin="anonymous">-->
+<!--        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">-->
+<!--        <link rel="stylesheet" href="css/order-pizza.css">-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
+<!--            <a class="navbar-brand bg-light" href="#">Pizza World</a>-->
+<!--            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
+<!--                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                <span class="navbar-toggler-icon"></span>-->
+<!--            </button>-->
+
+<!--            <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--                <ul class="navbar-nav mr-auto">-->
+<!--                    <li class="nav-item active">-->
+<!--                        <a class="nav-link bg-light" href="#">Order online-->
+<!--                            <span class="sr-only">(current)</span></a>-->
+<!--                    </li>-->
+<!--                    <li class="nav-item">-->
+<!--                        <a class="nav-link bg-light" href="#">Menu</a>-->
+<!--                    </li>-->
+<!--                    <li class="form-inline my-2 my-lg-0">-->
+<!--                        <input class="form-control mr-sm-2" type="zip code" placeholder="Zip Code"-->
+<!--                               aria-label="Zip Code">-->
+<!--                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit"> Search Store Near You!-->
+<!--                        </button>-->
+<!--                    </li>-->
+<!--                </ul>-->
+<!--                <form>-->
+<!--                    <img src="img/person-fill.svg" width="35" height="35" alt="icon">-->
+<!--                    <a class="nav-link bg-light" href="#">Sign Up</a>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </nav>-->
+<!--        <div class="container-fluid">-->
+<!--            <div class="jumbotron">-->
+<!--                <h1>Welcome To Pizza World!</h1>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <br>-->
+<!--        <h2>Build Your Own Pizza!</h2>-->
+
+<!--        <ul class="nav nav-tabs" id="myTab" role="tablist">-->
+<!--            <li class="nav-item" role="presentation">-->
+<!--                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"-->
+<!--                   aria-controls="home" aria-selected="true">Home</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item" role="presentation">-->
+<!--                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"-->
+<!--                   aria-controls="profile" aria-selected="false">Profile</a>-->
+<!--            </li>-->
+<!--            <li class="nav-item" role="presentation">-->
+<!--                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"-->
+<!--                   aria-controls="contact" aria-selected="false">Contact</a>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--        <div class="tab-content" id="myTabContent">-->
+<!--            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">-->
+<!--                &lt;!&ndash;Pizza crust and size         &ndash;&gt;-->
+<!--                <div class="card text-center">-->
+<!--                    <div class="card-header">-->
+<!--                        Featured-->
+<!--                    </div>-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Special title treatment</h5>-->
+<!--                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+<!--                    </div>-->
+<!--                    <div class="card-footer text-muted">-->
+<!--                        <a href="#" class="btn btn-primary float-right">Go somewhere</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">-->
+<!--                <div class="card text-center">-->
+<!--                    <div class="card-header">-->
+<!--                        Featured-->
+<!--                    </div>-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Page 2</h5>-->
+<!--                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+<!--                    </div>-->
+<!--                    <div class="card-footer text-muted">-->
+<!--                        <a href="#" class="btn btn-primary float-right">Go somewhere</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">-->
+<!--                <div class="card text-center">-->
+<!--                    <div class="card-header">-->
+<!--                        Featured-->
+<!--                    </div>-->
+<!--                    <div class="card-body">-->
+<!--                        <h5 class="card-title">Page 3</h5>-->
+<!--                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+<!--                    </div>-->
+<!--                    <div class="card-footer text-muted">-->
+<!--                        <a href="#" class="btn btn-primary float-right">Go somewhere</a>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        </div>-->
+<!--&lt;!&ndash;        <ul class="nav nav-tabs" id="myTab" role="tablist">&ndash;&gt;-->
+<!--&lt;!&ndash;            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"&ndash;&gt;-->
+<!--&lt;!&ndash;                   aria-selected="true"><span&ndash;&gt;-->
+<!--&lt;!&ndash;                        class="badge badge-pill badge-secondary">1</span> Pizza and Crust</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"&ndash;&gt;-->
+<!--&lt;!&ndash;                   aria-controls="profile" aria-selected="false"><span&ndash;&gt;-->
+<!--&lt;!&ndash;                        class="badge badge-pill badge-secondary">2</span> Cheese and Sauce</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;            <li class="nav-item">&ndash;&gt;-->
+<!--&lt;!&ndash;                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"&ndash;&gt;-->
+<!--&lt;!&ndash;                   aria-controls="contact" aria-selected="false"><span&ndash;&gt;-->
+<!--&lt;!&ndash;                        class="badge badge-pill badge-secondary">3</span> Toppings</a>&ndash;&gt;-->
+<!--&lt;!&ndash;            </li>&ndash;&gt;-->
+<!--&lt;!&ndash;        </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="tab-content" id="myTabContent">&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">&ndash;&gt;-->
+<!--&lt;!&ndash;                <div class="card">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h5 class="card-header">Choose size and crust</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <div class="card-body">&ndash;&gt;-->
+
+<!--&lt;!&ndash;                        <div class="card">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="card-header">&ndash;&gt;-->
+<!--&lt;!&ndash;                                Hand Tossed&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <ul class="list-group list-group-flush">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li class="list-group-items">Garlic seasoned crust with a rich, buttery taste.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="form-check border p-2 pl-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <input class="form-check-input" type="radio" name="pizza" id="radio1"&ndash;&gt;-->
+<!--&lt;!&ndash;                                           value="option1"&ndash;&gt;-->
+<!--&lt;!&ndash;                                           checked>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <label class="from-check-label" for="radio1">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        Small (10")&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="form-check border p-2 pl-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <input class="form-check-input" type="radio" name="pizza" id="radio2"&ndash;&gt;-->
+<!--&lt;!&ndash;                                           value="option1"&ndash;&gt;-->
+<!--&lt;!&ndash;                                           checked>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <label class="from-check-label" for="radio2">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        Medium (12")&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <br>&ndash;&gt;-->
+<!--&lt;!&ndash;                        <div class="card">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <div class="card-header">&ndash;&gt;-->
+<!--&lt;!&ndash;                                Crispy Thin&ndash;&gt;-->
+<!--&lt;!&ndash;                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            <ul class="list-group list-group-flush">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li class="list-group-items">Thin enough for optimum crispy to crunchy ratio.</li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="form-check border p-2 pl-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <input class="form-check-input" type="radio" name="pizza" id="radio3"&ndash;&gt;-->
+<!--&lt;!&ndash;                                           value="option1"&ndash;&gt;-->
+<!--&lt;!&ndash;                                           checked>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <label class="from-check-label" for="radio3">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        Medium (12")&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <div class="from-check border p-2 pl-4">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <input class="form-check-input" type="radio" name="pizza" id="radio4"&ndash;&gt;-->
+<!--&lt;!&ndash;                                           value="option1"&ndash;&gt;-->
+<!--&lt;!&ndash;                                           checked>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <label class="from-check-label" for="radio4">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        large (14")&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </ul>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;                    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">paul</div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <ul class="nav nav-tabs" id="myTab" role="tablist">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="nav-item" role="presentation">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button class="nav-link active" id="pizza-tab" data-bs-toggle="tab" data-bs-target="#pizza"&ndash;&gt;-->
+<!--&lt;!&ndash;                                type="button" role="tab" aria-controls="pizza" aria-selected="true"><span&ndash;&gt;-->
+<!--&lt;!&ndash;                                class="badge badge-pill badge-secondary">1</span> Pizza and Crust&ndash;&gt;-->
+<!--&lt;!&ndash;                        </button>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="nav-item" role="presentation">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button class="nav-link" id="cheese-tab" data-bs-toggle="tab" data-bs-target="#cheese" type="button"&ndash;&gt;-->
+<!--&lt;!&ndash;                                role="tab" aria-controls="cheese" aria-selected="false"><span&ndash;&gt;-->
+<!--&lt;!&ndash;                                class="badge badge-pill badge-secondary">2</span> Cheese and Sauce&ndash;&gt;-->
+<!--&lt;!&ndash;                        </button>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <li class="nav-item" role="presentation">&ndash;&gt;-->
+<!--&lt;!&ndash;                        <button class="nav-link" id="topping-tab" data-bs-toggle="tab" data-bs-target="#topping" type="button"&ndash;&gt;-->
+<!--&lt;!&ndash;                                role="tab" aria-controls="topping" aria-selected="false"><span&ndash;&gt;-->
+<!--&lt;!&ndash;                                class="badge badge-pill badge-secondary">3</span> Toppings&ndash;&gt;-->
+<!--&lt;!&ndash;                        </button>&ndash;&gt;-->
+<!--&lt;!&ndash;                    </li>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </ul>&ndash;&gt;-->
+<!--        &lt;!&ndash;        <div class="tab-content" id="myTabContent">&ndash;&gt;-->
+<!--        &lt;!&ndash;            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>&ndash;&gt;-->
+<!--        &lt;!&ndash;        </div>&ndash;&gt;-->
+
+
+<!--        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"-->
+<!--                integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"-->
+<!--                crossorigin="anonymous"></script>-->
+<!--        &lt;!&ndash; Your custom JS goes here &ndash;&gt;-->
+<!--    </body>-->
+<!--</html>-->
