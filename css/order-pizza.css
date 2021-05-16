@@ -1,10 +1,12 @@
 .jumbotron{
+    width: 90%;
+    margin: auto;
+    padding: 4rem 0;
     background-image: url("../img/pizza.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+
 }
 h1 {
+    text-align: center;
     background: rgba(255, 255, 255, 0.53)
 }
 #SizeAndCrustHeader {
@@ -15,76 +17,25 @@ h1 {
     background-color: #227bff;
     color: white;
 }
+#ToppingsHeader{
+    background-color: #227bff;
+    color: white;
+}
 .card {
     margin-bottom: 1em;
 }
 div.d-none {
     font-size: xx-large;
 }
-
-
-
-
-/*.jumbotron{*/
-/*    width: 90%;*/
-/*    margin: auto;*/
-/*    padding: 4rem 0;*/
-/*    background-image: url("../img/pizza.png");*/
-/*}*/
-
-/*.nav-links{*/
-/*    display: flex;*/
-/*}*/
-
-/*h1{*/
-/*    text-align: center;*/
-/*}*/
-
-/*h2{*/
-/*    width: 88%;*/
-/*    margin:auto;*/
-/*}*/
-
 form {
     display: flex;
 }
 
-/*.nav{*/
-/*    width: 88%;*/
-/*    margin: auto;*/
-/*}*/
+li.list-group-items{
+    list-style: none;
+}
 
-/*.card{*/
-/*    width: 88%;*/
-/*    margin:auto;*/
-/*    !*background-color: #027bff;*!*/
-/*    color: white;*/
-/*    border: 1px solid lightgrey;*/
-/*}*/
-/*.card1{*/
-/*    margin: auto;*/
-/*    width: 80%;*/
-/*    !*margin-bottom: 1em;*!*/
-/*    border: 1px solid lightgrey;*/
-/*}*/
-
-/*ul > li{*/
-/*    text-decoration: none;*/
-/*    color: black;*/
-/*}*/
-
-/*.card-footer{*/
-/*    text-align: right;*/
-/*}*/
-
-/*h5.card-header{*/
-/*    background: #027BFF;*/
-/*}*/
-
-/*div.card-header{*/
-/*    color: black;*/
-/*}*/
-
-/*label.from-check-label{*/
-/*    color: black;*/
-/*}*/
+h5.card-header{
+    background-color: #027BFF;
+    color: white;
+}
