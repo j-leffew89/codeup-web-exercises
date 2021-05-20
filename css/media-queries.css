@@ -37,7 +37,7 @@
     /*        margin-bottom: 2em;*/
     /*    }*/
     /*}*/
-@media screen and (min-width: 400px){
+@media screen and (max-width: 767px){
     .alert-info{
         display: flex;
         justify-content: center;
@@ -85,7 +85,7 @@
         font-size: 20px;
     }
 }
-@media screen and (min-width:700px) {
+@media screen and (min-width:768px) {
     body {
         margin-top: 1em;
         margin-right: .5em;
