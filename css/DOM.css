@@ -11,3 +11,27 @@
 /*#dbid{*/
 /*    color: blue;*/
 /*}*/
+
+body {
+    /*background-color:*/
+    text-align: center;
+}
+
+
+#main-header {
+    font-family: "Al Bayan";
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-flow: row nowrap;
+    text-align: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.button {
+    justify-content: space-between;
+}
+
