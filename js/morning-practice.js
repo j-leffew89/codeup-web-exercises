@@ -34,9 +34,9 @@
 //      return arr(arr.length -2)
 // }
 
-let numbers = ["jesse", 0, NaN, true, 8,null]
-function secondToLast(names){
-    return typeof names[names.length -4]
-}
-
-console.log(secondToLast(numbers));
+// let numbers = ["jesse", 0, NaN, true, 8,null]
+// function secondToLast(names){
+//     return typeof names[names.length -4]
+// }
+//
+// console.log(secondToLast(numbers));

@@ -4,21 +4,21 @@
 /*    text-decoration: underline;*/
 /*}*/
 
-body{
-    background-image: url("https://thelatch.com.au/wp-content/uploads/2020/04/the-iron-throne.jpg");
-    height: 1px;
-    text-align: justify-all;
-}
+/*body{*/
+/*    background-image: url("https://thelatch.com.au/wp-content/uploads/2020/04/the-iron-throne.jpg");*/
+/*    height: 1px;*/
+/*    text-align: justify-all;*/
+/*}*/
 
 
-ul > li{
-    color: purple;
-    text-decoration: underline;
-}
-h1{
-    color: red;
-}
-.fancy-header {
-    color: blue;
-    text-decoration: underline;
-}
+/*ul > li{*/
+/*    color: purple;*/
+/*    text-decoration: underline;*/
+/*}*/
+/*h1{*/
+/*    color: red;*/
+/*}*/
+/*.fancy-header {*/
+/*    color: blue;*/
+/*    text-decoration: underline;*/
+/*}*/

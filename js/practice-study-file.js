@@ -254,23 +254,32 @@
 // argument is not a number/numeric string
 // (edited)
 
-function remainder(num, div){
-    if (isNaN(num) || isNaN(div)){
-        return false
-    }else if (num ==="number" || div ==="number"){
-        return console.log("this isn't right")
-    }
-    return num % div;
-}
+// function remainder(num, div){
+//     if (isNaN(num) || isNaN(div)){
+//         return false
+//     }else if (num ==="number" || div ==="number"){
+//         return console.log("this isn't right")
+//     }
+//     return num % div;
+// }
+//
+// console.log(remainder(44, 20))
+//
+// console.log("---------------------------------")
+//
+// for(let i = 1; i <=5; i++){
+//     let output = '* '
+//     for(let j = 1; j <=i; j++) {
+//         output += i
+//     }
+//     console.log(output);
+// }
+//
+// for(let i = 0; i <= 10; i++) {
+//     console.log(i);
+// }
+//
+// band.shred = function() {
+//     console.log('RAAAAAAAAAA!!!!');
+// }
 
-console.log(remainder(44, 20))
-
-console.log("---------------------------------")
-
-for(let i = 1; i <=5; i++){
-    let output = '* '
-    for(let j = 1; j <=i; j++) {
-        output += i
-    }
-    console.log(output);
-}
