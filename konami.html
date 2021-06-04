@@ -1,31 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Konami Code</title>
-    </head>
-    <body>
-        <h1>Konami Code</h1>
-
-        <script src="js/jquery-2.2.4.js"></script>
-        <script src="js/konami.js"></script>
-        <script>
-            "use strict";
-
-            $(document).keyup(function(event){
-                console.log(event.keyCode);
-            });
-            $('document').konami(function (){
-                alert('You Have Added 30 Lives!');
-            });
-
-        </script>
-
-    </body>
-</html>
-
-
 <!--<!DOCTYPE html>-->
-<!--<html>-->
+<!--<html lang="en">-->
 <!--    <head>-->
 <!--        <title>Konami Code</title>-->
 <!--    </head>-->
@@ -33,12 +7,52 @@
 <!--        <h1>Konami Code</h1>-->
 
 <!--        <script src="js/jquery-2.2.4.js"></script>-->
+<!--        <script src="js/konami.js"></script>-->
 <!--        <script>-->
 <!--            "use strict";-->
 
 <!--            $(document).keyup(function(event){-->
 <!--                console.log(event.keyCode);-->
 <!--            });-->
+<!--            $('document').konami(function (){-->
+<!--                alert('You Have Added 30 Lives!');-->
+<!--            });-->
+
 <!--        </script>-->
+
 <!--    </body>-->
 <!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Konami Code</title>
+    </head>
+    <body>
+        <h1>Konami Code</h1>
+        <script src="js/jquery-2.2.4.js"></script>
+        <script>
+            "use strict";
+
+            function konami (fn) {
+                let input = "";
+                let secretCode = "3838404037393739666513";
+                $(document).keydown(function(e) {
+                    console.log(e.keyCode)
+                    input += e.keyCode;
+                    if (input.indexOf(secretCode) !== -1) {
+                        fn();
+                        input = "";
+                    }
+                });
+            }
+
+            $(document).ready(function() {
+                konami(function() {
+                    alert("You have added 30 lives!");
+                });
+            });
+        </script>
+    </body>
+</html>

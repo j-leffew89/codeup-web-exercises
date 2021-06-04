@@ -133,5 +133,33 @@
         };
         cardContainers.hover(handler1, handler2);
     }
+
 })();
 
+
+
+$(document).ready(function (){
+    $('#submitBtn').click(function () {
+        $('#override-bootstrap').css('background-color', 'red')
+    });
+
+    $('.card-text').click(function (){
+        $(this).css('background-color', 'red')
+    });
+
+    $('#restBtn').click(function (){
+        location.reload()
+    })
+
+    // $('#main-title').click(function() {
+    //     $(this).css('font-size', '4em');
+    // });
+    $(document).ready(function (){
+        $('#main-title').click(function (){
+            let font = $(this).css('font-size');
+            let doubleFont = parseFloat(font) * 2;
+            $(this).css('font-size', doubleFont);
+        });
+    });
+
+});
