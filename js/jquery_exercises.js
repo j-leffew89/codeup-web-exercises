@@ -34,7 +34,7 @@ $('p').dblclick(function() {
     $(this).css('font-size', '18px');
 });
 
-$('li').hover(function () {
+$('.jqClass').hover(function () {
     $(this).css('color', 'red');
 },function(){
     $(this).css('color', 'black');
