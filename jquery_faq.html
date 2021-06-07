@@ -71,21 +71,21 @@
 
         <section style="list-style: inside">
             <h3>Yosemite National Park</h3>
-            <ul id="yosemite">
+            <ul id="yosemite" style="list-style: none">
                 <li>The park’s diverse landscape supports more than 400 species.</li>
                 <li>Yosemite’s granite rock formations glow like fire at sunset.</li>
                 <li>Yosemite is one of the few places in the U.S. where you can see a rainbow at night.</li>
                 <li>Yosemite National Park covers nearly 1,200 square miles. </li>
             </ul>
             <h3 id="Millers-pond-heading">Miller's Pond</h3>
-            <ul id="millers-pond">
+            <ul id="millers-pond" style="list-style: none">
                 <li>Purchased in June 1976</li>
                 <li>It is 42.15 acres! Wow!</li>
                 <li>Park is stocked with fish by Texas Parks and Wildlife Department</li>
                 <li>They have a weight room!? Waaaaa</li>
             </ul>
             <h3>Redwood National Park</h3>
-            <ul id="redwood-park">
+            <ul id="redwood-park" style="list-style: none">
                 <li>Tallest Tree</li>
                 <li>Northern California</li>
                 <li>Only 5% Redwoods left</li>
@@ -112,6 +112,7 @@
                 $(document).ready(function (){
                     $('dt').click(function (){
                         $(this).toggleClass('highlighted');
+                        $(this).next('dd').slideToggle("slow");
                     })
                 })
                 $('#facts').click(function(){
@@ -125,6 +126,7 @@
                 $('li').click(function(){
                     $(this).parent().children().first().css('color','blue');
                 });
+
             })();
         </script>
     </body>
