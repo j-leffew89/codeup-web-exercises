@@ -57,14 +57,14 @@
 //     })
 //
 //
-    $(document).ready(function () {
-        $('#main-title').click(function () {
-            let font = $(this).css('font-size');
-            let doubleFont = parseFloat(font) * 2;
-            $(this).css('font-size', doubleFont);
-        });
-    });
-//
+//     $(document).ready(function () {
+//         $('#main-title').click(function () {
+//             let font = $(this).css('font-size');
+//             let doubleFont = parseFloat(font) * 2;
+//             $(this).css('font-size', doubleFont);
+//         });
+//     });
+// //
 
 //     let hoverIn = function () {
 //         let attributeValue = $(this).attr('date-attribute');
@@ -100,16 +100,48 @@
 //  -> Remove the old click events from #submitBtn
 //  -> When the user clicks #submitBtn, redirect the page to the value of #redirect-url
 //  -> HINT: You can either add a new input or change the id of an existing input element to #redirect-url to save time
-//
+
 // $('#redirect-url')(function () {
 //     window.location.replace('http://tutorialrepublic.com/');
 // })
 //
 // setTimeout('redirect-url()', 10000)
-//
+
 //
 // // TODO: After a 2 second delay (BOM), when the user loads the page, change #main-title to a value of your choosing (change text, background color, what have you)!
+
 // setTimeout(function (){
 //     $('#main-title').css({'background-color': 'blue',
 //     'color': 'black'});
 // });
+
+// TODO: When the user clicks #submitBtn, log to the console the values of #first, #last, and #handleField
+//  -> If any of the fields are empty, alert the user to fill the empty control (be sure to tell them which control was empty)
+
+// $(document).ready(function(){
+//     $("#submitBtn").click(function(){
+//         let str = $("#first").val();
+//         console.log(str)
+//     });
+//     $("#submitBtn").click(function(){
+//         let str = $("#last").val();
+//         console.log(str)
+//     });
+//     $("#submitBtn").click(function(){
+//         let str = $("#handleField").val();
+//         console.log(str)
+//     });
+// });
+
+$('#submitBtn').click(function (){
+    if($('#first').val() === '' || $('#last').val === '' || $('#handleField').val === ''){
+        alert("All inputs must be filled in!")
+    }else{
+        let person = {
+            firstName: $('#first').val(),
+            lastName: $('#last').val(),
+            handleField: $('#handleField').val()
+        }
+        console.log(person)
+    }
+})
