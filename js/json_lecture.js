@@ -25,50 +25,51 @@
 
 // TODO: using https://jsonplaceholder.typicode.com/ make an ajax request to the comments endpoint and console it.
 
-let jsonObj = $.ajax("https://jsonplaceholder.typicode.com/comments",
-    {
-        type: 'GET'
-    })
-console.log(jsonObj);
-
-
-let jsonPostObj = $.ajax("https://jsonplaceholder.typicode.com/posts",
-    {
-        type: "POST",
-        data: {
-            'userId': 111,
-            'id': 101,
-            'title': 'Jesse',
-            'Completed': false,
-            "body": "lorem ipsum blah blah blah"
-        }
-    });
-console.log(jsonPostObj);
 
 
 
 
-
-
-
-// let jsonObj = $.ajax("https://jsonplaceholder.typicode.com/comments",
-//     {
-//         type: "GET",
-//         date: {
-//             title: ''
 //
-//
-//         }
-//     });
-// console.log(jsonObj);
+// $('#showData').click(function (){
+//     console.log($.ajax("https://jsonplaceholder.typicode.com/posts",
+//         {
+//             type: "POST",
+//             data: {
+//                 'userId': 111,
+//                 'id': 101,
+//                 'title': 'Jesse',
+//                 'Completed': false,
+//                 "body": "lorem ipsum blah blah blah"
+//             }
+//         }));
+//     console.log($.ajax("https://jsonplaceholder.typicode.com/comments"))
+// })
 
 
-// console.log($.ajax('https://jsonplaceholder.typicode.com/comments'));
 
-// $.ajax('https://jsonplaceholder.typicode.com/comments', {
+
+// console.log($.ajax("https://jsonplaceholder.typicode.com/comments"))
+// $.ajax("https://jsonplaceholder.typicode.com/comments").done(function (data,status,jeudj){
+//     console.log(status);
+//     console.log(data);
+//     alert('Your request has been completed successfully')
+// })
+
+// $.ajax('https://jsonplaceholder.typicode.com/psts', {
 //     type: "POST",
 //     data: {
-//         title:
-//
+//         title: "hello world",
+//         body: "our planet rocks!"
 //     }
+// }).fail(function (jqHxr, status, error){
+//     console.log(jqHxr);
+//     console.log(status);
+//     console.log(error);
 // });
+
+//
+// $.ajax('https://jsonplaceholder.typicode.com/posts').always(function (){
+//     alert("Thank you for being here today")
+// })
+
+$.ajax()
