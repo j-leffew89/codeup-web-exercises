@@ -30,7 +30,7 @@ function setGeocoder() {
 }
 // adds geocoder to map
 function addGeocoderToMap(geocoder) {
-        map.addControl(geocoder);
+    map.addControl(geocoder);
 }
 
 // adds event listener to geocoder and sets new marker to location
