@@ -72,4 +72,4 @@
 //     alert("Thank you for being here today")
 // })
 
-$.ajax()
+// $.ajax()
