@@ -1,67 +1,109 @@
 const token = "pk.eyJ1IjoianNvc2E4OSIsImEiOiJja3Bwbjg5MXgwMGsyMnZtbHlhYzVseHNmIn0.ouScIp2zZhQhLcJ9IM8Q_g"
 
-mapboxgl.accessToken = token;
 
+mapboxgl.accessToken = token;
 let map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v10',
     center: [-98.4936, 29.4241],
-    zoom: 12
+    zoom: 10
+
 });
-// call function to create method and give initial point
-let marker = setMarker([-98.4936, 29.4241]);
 
-// call addMapEvent AFTER the marker has been initially set
-addMapEvent(marker);
+map.on('load', function () {
+    map.addSource("markers", {
+        "type": "geojson",
+        "data": {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        'description': "<strong>China Sun</strong>" <p><br> 4107
+                        Naco Perrin
+                        Blvd,
+                        San Antonio,
+                        TX 78217 < br > < /p>
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": ["-98.4936, 29.4241"]
+                    },
+                },
+                {
+                        "properties": {
+                            "title": "Start",
+                            "marker-symbol": "entrance",
+                            "marker-size": "small",
+                            "marker-color": "#D90008"
+                        }
+                    },
 
-// creates new geocoder nd assigns to variable
-let geocoder = setGeocoder();
-addGeocoderToMap(geocoder)
-addGeocoderEvent(geocoder)
-setPopup("this is my text")
-
-//creates and returns a new GeoCoder (search box)
-function setGeocoder() {
-    return new MapboxGeocoder({
-        accessToken: mapboxgl.accessToken,
-        mapboxgl: mapboxgl,
-        marker: false
-    })
-}
-// adds geocoder to map
-function addGeocoderToMap(geocoder) {
-    map.addControl(geocoder);
-}
-
-// adds event listener to geocoder and sets new marker to location
-function addGeocoderEvent(geocoder){
-    geocoder.on('result', function (e){
-        console.log(e)
-        marker.setLngLat(e.result.geometry.coordinates)
-
-        setPopup(e.result.geometry.name)
-    })
-}
-
-// creates a marker
-function setMarker(point) {
-    return new mapboxgl.Marker().setLngLat(point)
-        .addTo(map);
-}
-
-// adds event to map that changes location of marker
-//based on where the user clicks
-function addMapEvent(marker) {
-    map.on('click', function (e) {
-        console.log(e.lngLat);
-        marker.setLngLat(e.lngLat)
-            .addTo(map);
+            ]
+        }
     });
-}
-
-function setPopup(textDetails){
-    let popup = new mapboxgl.Popup().setHTML(`<p>${textDetails}</p>`)
-        .addTo(map);
-
-    marker.setPopup(popup);
-}
+    map.addLayer({
+        "id": "markers",
+        "type": "symbol",
+        "source": "markers",
+        "layout": {
+            "icon-image": "{marker-symbol}-15", //but monument-15 works
+            "text-field": "{title}",
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, -1.6],
+            "text-anchor": "top"
+        }
+    });
+});
+// mapboxgl.accessToken = token;
+// let map = new mapboxgl.Map({
+//     container: 'map',
+//     style: 'mapbox://styles/mapbox/streets-v9',
+//     zoom: 10,
+//     center: [-98.4916, 29.4252]
+// });
+// function geocode(search, token) {
+//     let baseUrl = 'https://api.mapbox.com';
+//     let endPoint = '/geocoding/v5/mapbox.places/';
+//     return fetch(baseUrl + endPoint + encodeURIComponent(search) + '.json' + "?" + 'access_token=' + token)
+//         .then(function(res) {
+//             return res.json();
+//             // to get all the data from the request, comment out the following three lines...
+//         }).then(function(data) {
+//             return data.features[0].center;
+//         });
+// }
+// // adds zoom controls on the map.
+// map.addControl(new mapboxgl.NavigationControl());
+//
+// let restaurants = [
+//     {
+//         name:"Tong's Thai",
+//         address:"1146 Austin Hwy, San Antonio, Tx 78209",
+//         review:"Super delicious Thai Food!"
+//     },
+//     {
+//         name:"Kimura",
+//         address:"152 E Pecan St #102, San Antonio, Tx 78209",
+//         review:"Super delicious Thai Food!"
+//     },
+//     {
+//         name:"Godai",
+//         address:"11203 West Ave, San Antonio, Tx 78213",
+//         review:"Super delicious Thai Food!"
+//     },
+// ];
+//
+// restaurants.forEach(function(restaurant) {
+//     geocode(restaurant.address, token).then(function (data) {
+//         console.log(data);
+//
+//         let markUps = new mapboxgl.Marker().setLngLat(data).addTo(map);
+//
+//         let popUps = new mapboxgl.Popup()
+//             .setHTML(restaurant.name)
+//             .addTo(map)
+//
+//         markUps.setPopup(popUps);
+//     });
+// });

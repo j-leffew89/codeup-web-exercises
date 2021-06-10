@@ -14,6 +14,7 @@ let marker = setMarker([-98.4936, 29.4241]);
 // call addMapEvent AFTER the marker has been initially set
 addMapEvent(marker);
 
+
 // creates new geocoder nd assigns to variable
 let geocoder = setGeocoder();
 addGeocoderToMap(geocoder)
@@ -65,3 +66,4 @@ function setPopup(textDetails){
 
     marker.setPopup(popup);
 }
+
