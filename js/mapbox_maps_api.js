@@ -2,6 +2,7 @@ const token = "pk.eyJ1IjoianNvc2E4OSIsImEiOiJja3Bwbjg5MXgwMGsyMnZtbHlhYzVseHNmIn
 
 
 mapboxgl.accessToken = token;
+
 let map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/dark-v10',
@@ -11,99 +12,82 @@ let map = new mapboxgl.Map({
 });
 
 map.on('load', function () {
-    map.addSource("markers", {
-        "type": "geojson",
-        "data": {
-            "type": "FeatureCollection",
-            "features": [
+    map.addSource('places', {
+        'type': 'geojson',
+        'data': {
+            'type': 'FeatureCollection',
+            'features': [
                 {
-                    "type": "Feature",
-                    "properties": {
-                        'description': "<strong>China Sun</strong>" <p><br> 4107
-                        Naco Perrin
-                        Blvd,
-                        San Antonio,
-                        TX 78217 < br > < /p>
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<strong>China Sun</strong><p><br><a href="https://mychinasun.com/" target="_blank" title="Opens in a new window">China Sun</a><br>(4107 Naco Perrin Blvd, San Antonio, Tx 78217)<br> Amazing Chinese food</p>',
+                        'icon': 'restaurant'
                     },
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": ["-98.4936, 29.4241"]
-                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [-98.41397, 29.54425]
+                    }
                 },
                 {
-                        "properties": {
-                            "title": "Start",
-                            "marker-symbol": "entrance",
-                            "marker-size": "small",
-                            "marker-color": "#D90008"
-                        }
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<strong>Waynes Wings</strong><p><br><a href="https://www.wayneswingssa.com/" target="_blank" title="Opens in a new window">Waynes Wings</a><br>(4453 Walzem Rd, San Antonio, Tx 78218) <br> Known for their amazing wings</p>',
+                        'icon': 'restaurant',
                     },
-
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [-98.40565, 29.51052]
+                    }
+                },
+                {
+                    'type': 'Feature',
+                    'properties': {
+                        'description':
+                            '<strong>Armadillo Burger</strong><p><br><a href="https://www.armadilloburger.com/" target="_blank" title="Opens in a new window">Armadillos</a><br>(1423 McCullough Ave,<br>San Antonio, Tx)<br><br>This place has really good burgers</p>',
+                        'icon': 'restaurant'
+                    },
+                    'geometry': {
+                        'type': 'Point',
+                        'coordinates': [-98.49220, 29.44266]
+                    }
+                },
             ]
         }
     });
     map.addLayer({
-        "id": "markers",
-        "type": "symbol",
-        "source": "markers",
-        "layout": {
-            "icon-image": "{marker-symbol}-15", //but monument-15 works
-            "text-field": "{title}",
-            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
-            "text-offset": [0, -1.6],
-            "text-anchor": "top"
+        'id': 'places',
+        'type': 'symbol',
+        'source': 'places',
+        'layout': {
+            'icon-image': '{icon}-15',
+            'icon-allow-overlap': true
         }
     });
+    map.on('click', 'places', function (e) {
+        let coordinates = e.features[0].geometry.coordinates.slice();
+        let description = e.features[0].properties.description;
+        console.log('click')
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+        new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map)
+
+        map.on('mouseenter', 'places', function () {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+// Change it back to a pointer when it leaves.
+        map.on('mouseleave', 'places', function () {
+            map.getCanvas().style.cursor = '';
+        });
+
+    });
+
 });
-// mapboxgl.accessToken = token;
-// let map = new mapboxgl.Map({
-//     container: 'map',
-//     style: 'mapbox://styles/mapbox/streets-v9',
-//     zoom: 10,
-//     center: [-98.4916, 29.4252]
-// });
-// function geocode(search, token) {
-//     let baseUrl = 'https://api.mapbox.com';
-//     let endPoint = '/geocoding/v5/mapbox.places/';
-//     return fetch(baseUrl + endPoint + encodeURIComponent(search) + '.json' + "?" + 'access_token=' + token)
-//         .then(function(res) {
-//             return res.json();
-//             // to get all the data from the request, comment out the following three lines...
-//         }).then(function(data) {
-//             return data.features[0].center;
-//         });
-// }
-// // adds zoom controls on the map.
-// map.addControl(new mapboxgl.NavigationControl());
-//
-// let restaurants = [
-//     {
-//         name:"Tong's Thai",
-//         address:"1146 Austin Hwy, San Antonio, Tx 78209",
-//         review:"Super delicious Thai Food!"
-//     },
-//     {
-//         name:"Kimura",
-//         address:"152 E Pecan St #102, San Antonio, Tx 78209",
-//         review:"Super delicious Thai Food!"
-//     },
-//     {
-//         name:"Godai",
-//         address:"11203 West Ave, San Antonio, Tx 78213",
-//         review:"Super delicious Thai Food!"
-//     },
-// ];
-//
-// restaurants.forEach(function(restaurant) {
-//     geocode(restaurant.address, token).then(function (data) {
-//         console.log(data);
-//
-//         let markUps = new mapboxgl.Marker().setLngLat(data).addTo(map);
-//
-//         let popUps = new mapboxgl.Popup()
-//             .setHTML(restaurant.name)
-//             .addTo(map)
-//
-//         markUps.setPopup(popUps);
-//     });
-// });
+
+
