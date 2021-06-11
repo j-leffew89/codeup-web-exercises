@@ -33,7 +33,7 @@ map.on('load', function () {
                     'type': 'Feature',
                     'properties': {
                         'description':
-                            '<strong>Waynes Wings</strong><p><br><a href="https://www.wayneswingssa.com/" target="_blank" title="Opens in a new window">Waynes Wings</a><br>(4453 Walzem Rd, San Antonio, Tx 78218) <br> Known for their amazing wings</p>',
+                            '<strong>Wayne\'s Wings</strong><p><br><a href="https://www.wayneswingssa.com/" target="_blank" title="Opens in a new window">Wayne\'s Wings</a><br>(4453 Walzem Rd, San Antonio, Tx 78218) <br> Known for their amazing wings</p>',
                         'icon': 'restaurant',
                     },
                     'geometry': {
