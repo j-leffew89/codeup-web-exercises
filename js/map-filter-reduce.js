@@ -98,10 +98,17 @@ const users = [
 
 
 //-----------------PROMISE'S-------------------
+// fetch('https://jsonplaceholder.typicode.com/posts/1')
+//     .then(response => {
+//         console.log(response.json())
+//     })
+//     .then(data => {
+//         console.log(data);
+//     })
+
 fetch('https://jsonplaceholder.typicode.com/posts/1')
-    .then(response => {
-        console.log(response.json())
-    })
+    .then(response => response.json())
     .then(data => {
-        console.log(data);
-    })
+        console.log(data)
+        $("div").append(`<p>${data.title}</p>`)
+    });
