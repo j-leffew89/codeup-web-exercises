@@ -283,3 +283,16 @@
 //     console.log('RAAAAAAAAAA!!!!');
 // }
 
+// function sayHello(name) {
+//     return 'Hello, ' + name + '!';
+// }
+
+
+// const sayHello = (name) => { 'Hello, ' + name + '!' }
+// let sayHello = name => { 'Hello, ' + name + '!' }
+//
+// console.log(sayHello('jesse'))
+
+const sayHello = (name) => `Hello, ${name}!`
+
+sayHello('jesse');
