@@ -1,3 +1,4 @@
+
 [
   {
     "title": "Hammer",
@@ -30,21 +31,14 @@
     "tool"
   ],
   "price": 10
-},
-  {
-    "title": "jo",
-    "quantity": 2500,
-    "categories": [
-      "tool"
-    ],
-    "price": 10000
-  },
-  {
-    "title": "spider",
-    "quantity": 2500000,
-    "categories": [
-      "tool"
-    ],
-    "price": 100000
-  }
+} , {
+  "title": "Chainsaw",
+  "quantity": 4,
+  "categories": [
+    "tool",
+    "gas",
+    "outdoor"
+  ],
+  "price": 80
+}
 ]
