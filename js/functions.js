@@ -97,7 +97,7 @@
          * then display the dollar amount they should tip
          */
 
-        let totalOfTheBill = prompt("Waht is your total bill")
+        let totalOfTheBill = prompt("What is your total bill")
         let totalTip = prompt("How much is your percentage")
 
           alert(calculateTip(totalOfTheBill, totalTip));
