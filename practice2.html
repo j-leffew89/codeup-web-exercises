@@ -1,13 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-    </head>
-    <body>
-        <h1>Hello</h1>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--    <head>-->
+<!--        <meta charset="UTF-8">-->
+<!--        <title>Title</title>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        <h1>Hello</h1>-->
 
 
-        <script src="js/practice2.js"></script>
-    </body>
-</html>
+<!--        <script src="js/practice2.js"></script>-->
+<!--    </body>-->
+<!--</html>-->
+
+
+
+    -------------------------------------------
+
+    package com.codeup.byteoptions.data.user;
+
+    import org.springframework.data.jpa.repository.JpaRepository;
+
+    import java.util.Optional;
+
+    public interface UsersRepository extends JpaRepository<User, Long> {
+    //    User findByUsername(String username);
+    //    Optional<User> findByEmail(String email);
+        }

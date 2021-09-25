@@ -293,6 +293,3 @@
 //
 // console.log(sayHello('jesse'))
 
-const sayHello = (name) => `Hello, ${name}!`
-
-sayHello('jesse');
